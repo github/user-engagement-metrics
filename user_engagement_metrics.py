@@ -114,6 +114,8 @@ if __name__ == "__main__":
         usernames = [line.strip() for line in f if line.strip()]
 
     print(f"Loaded {len(usernames)} usernames, {len(completed)} already completed.")
+    if TOKEN == "your_token":
+        print("Warning: You need to generate and use a token.")
 
     for idx, username in enumerate(usernames):
         if username in completed:
