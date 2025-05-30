@@ -1,0 +1,5 @@
+{
+  "threshold": 25,
+  "ignore": ["/github/workspace/test*"],
+  "absolute": true
+}
