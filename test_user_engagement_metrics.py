@@ -94,7 +94,7 @@ def test_get_user_repos(monkeypatch):
     # Simulate 2 pages, then empty
     responses = [[{"id": 1}, {"id": 2}]]
 
-    def safe_get(_url, _params=None):
+    def safe_get(_url, **kwargs):
         return MagicMock(json=lambda: responses.pop(0))
 
     monkeypatch.setattr(user_engagement_metrics, "safe_get", safe_get)
