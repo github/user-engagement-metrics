@@ -5,3 +5,4 @@ isort
 pylint
 mypy
 black
+types-requests
